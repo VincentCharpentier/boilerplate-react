@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": false,
+        "shippedProposals": true
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "react-loadable/babel",
+    "dynamic-import-webpack",
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "shared"
+      }
+    ],
+    "transform-class-properties"
+  ]
+}
